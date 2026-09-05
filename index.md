@@ -17,7 +17,7 @@ Countersign does not collect, transmit, or share any personal data.
 - **Trusted host keys** are stored in a private `known_hosts` file on your Mac.
 - **Third parties.** None. No SDKs, no advertising, no tracking.
 - **Children.** Countersign is a developer tool and does not knowingly collect information from anyone.
-- **Contact.** Open an issue at https://github.com/Cyber-Nicholas/countersign-privacy or use GitHub's private vulnerability reporting for security matters.
+- **Contact.** Open an issue at https://github.com/Cyber-Nicholas/countersign-privacy/issues. For security matters, open an issue titled "security contact" and you will be given a private channel.
 
 Changes to this policy will be published in this file with a new date.
 
@@ -33,7 +33,7 @@ Countersign 不收集、不传输、不共享任何个人数据。
 - **受信任的主机密钥**保存在你 Mac 上的一个独立 `known_hosts` 文件里。
 - **第三方。** 没有。没有 SDK、没有广告、没有追踪。
 - **儿童。** Countersign 是开发者工具，不会有意收集任何人的信息。
-- **联系方式。** 在 https://github.com/Cyber-Nicholas/countersign-privacy 提交 issue；安全问题请使用 GitHub 的私密漏洞报告。
+- **联系方式。** 在 https://github.com/Cyber-Nicholas/countersign-privacy/issues 提交 issue；安全问题请提交标题为 "security contact" 的 issue，我们会提供私密渠道。
 
 本政策如有变更，会在本文件中以新的日期发布。
 
@@ -49,7 +49,7 @@ Countersign 不收集、不傳輸、不分享任何個人資料。
 - **受信任的主機金鑰**保存在你 Mac 上的一個獨立 `known_hosts` 檔案中。
 - **第三方。** 沒有。沒有 SDK、沒有廣告、沒有追蹤。
 - **兒童。** Countersign 是開發者工具，不會刻意收集任何人的資訊。
-- **聯絡方式。** 在 https://github.com/Cyber-Nicholas/countersign-privacy 建立 issue；安全問題請使用 GitHub 的私密弱點回報。
+- **聯絡方式。** 在 https://github.com/Cyber-Nicholas/countersign-privacy/issues 建立 issue；安全問題請建立標題為 "security contact" 的 issue，我們會提供私密管道。
 
 本政策如有變更，會在本檔案中以新的日期發布。
 
@@ -65,6 +65,6 @@ Countersign は個人データを一切収集、送信、共有しません。
 - **信頼済みホスト鍵**は Mac 上の専用 `known_hosts` ファイルに保存されます。
 - **第三者。** ありません。SDK、広告、トラッキングは一切ありません。
 - **子ども。** Countersign は開発者向けツールであり、誰からも意図的に情報を収集しません。
-- **連絡先。** https://github.com/Cyber-Nicholas/countersign-privacy で issue を作成してください。セキュリティに関する事項は GitHub のプライベート脆弱性報告をご利用ください。
+- **連絡先。** https://github.com/Cyber-Nicholas/countersign-privacy/issues で issue を作成してください。セキュリティに関する事項は "security contact" というタイトルの issue を作成いただければ、非公開の連絡手段をご案内します。
 
 本ポリシーの変更は、新しい日付とともにこのファイルで公開されます。
