@@ -18,6 +18,14 @@ AgentVault is a local macOS credential broker. The developer operates no backend
 - Credential names, allowed targets, SSH public-key metadata and host trust records are stored locally or in the user's Keychain as needed. Local activity records contain time, action, credential ID, requester label, target and outcome, but never secret values or authorization tokens. They are retained for up to 30 days and can be cleared in the app.
 - Users can explicitly copy a credential to the clipboard. Secret clipboard contents are cleared after 60 seconds if the clipboard still contains that value.
 
+## Browser import and agent setup
+
+Browser import reads only a password CSV explicitly selected by the user. It does not access browser databases, history or cookies. The CSV is parsed in memory; one Touch ID approval is required before saving a batch to the user's iCloud Keychain. No CSV copy or password log is created. The user is reminded to delete the original plaintext export after verification.
+
+Agent discovery checks a fixed set of common application and configuration locations, not chats or session contents. Configuration is modified only after the user chooses Enable. Other settings are preserved, and an original configuration backup is created locally with owner-only permissions (0600). These files may contain other services' sensitive settings and are not uploaded.
+
+The isolated unsigned preview uses synthetic data and cannot access real credentials protected by an application identity. It does not replace the protected credential service.
+
 ## Third parties and deletion
 
 Apple's processing of iCloud Keychain data is governed by Apple's terms and privacy policy. Any agent receiving a user-authorized credential is governed by that agent provider's terms. AgentVault does not sell data or send credentials to the developer.
@@ -36,6 +44,9 @@ AgentVault 是本机 macOS 凭据代理。开发者不经营后端服务，不�
 - SSH 使用系统客户端连接用户指定的服务器；私钥短暂写入受权限保护的本地临时文件，操作结束后删除。用户请求的主机公钥检查也会连接对应 SSH 服务器。
 - 凭据名称、允许的目标、公钥元数据和主机信任记录按需存放在本机或用户 Keychain 中。本地活动记录仅含时间、操作、凭据 ID、请求方标签、目标和结果，不含秘密或授权 Token，最多保留 30 天，可手动清除。
 - 用户主动复制秘密后，剪贴板内容在 60 秒后按值清理；用户已复制其他内容时不会覆盖。
+- 浏览器导入只读取用户明确选择的密码 CSV，不读取浏览器数据库、历史或 Cookie。文件在内存中解析，一次 Touch ID 批量保存到用户的 iCloud Keychain；不创建 CSV 副本或密码日志。原导出文件由用户在验证后自行删除。
+- Agent 发现只检查支持客户端的常见应用/配置位置，不读取聊天或会话。用户点击启用后才修改配置，保留其他设置，并创建仅限本人读写（0600）的本机备份；配置和备份可能包含其他服务的敏感设置，不会上传。
+- 隔离的无签名体验版使用虚构数据，不读取真实凭据，不替代受保护的凭据服务。
 
 Apple 的 iCloud Keychain 处理受 Apple 条款和隐私政策约束；收到授权凭据的 Agent 受其服务商条款约束。AgentVault 不出售数据，也不向开发者发送凭据。
 
