@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Agent Vault Support
+title: AgentVault Support
 ---
 
-# Agent Vault Support
+# AgentVault Support
 
-Agent Vault is a free macOS app that puts a Touch ID gate between AI coding
-agents and your secrets. Agents request actions; they never receive a value.
+AgentVault is a macOS app that puts a Touch ID gate between AI agents and
+your credentials. Website passwords and API tokens can be returned to the
+agent after authorization. SSH private keys remain local and are never returned.
 
 - **Questions or bug reports:** open an issue at
   <https://github.com/Cyber-Nicholas/agentvault-privacy/issues>.
